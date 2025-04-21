@@ -6,7 +6,7 @@ book:
   author: "Nicholas Bell, Ph.D."
   chapters:
     - index.qmd
-    # - operationalization.qmd
+    - operationalization.qmd
     
 format:
   html:
