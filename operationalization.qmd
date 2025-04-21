@@ -12,4 +12,6 @@ Although I am picking on Fearon and Laitin a bit here, in truth, it is *very* di
 
 > [Mountainous terrain] does not pick up other sorts of rough terrain that can be favorable to guerrillas such as swamps and jungle, and it takes no account of population distributions or food availability in relation to mountains; but it is the best we have been able to do.
 
-We run into this problem all the time. For example, Freedom House.
+We are forced to confront the limitations of our measures all the time. Even how we measure support for Presidential election candidates can be tricky: the Monmouth University Poll, one of the nation's preeminent national election pollsters, now asks survey respondents about [their probability of support each candidate](https://www.monmouth.edu/polling-institute/2022/11/14/2022-monmouth-university-poll-recap/) as separate questions rather than a single head-to-head question for each race.
+
+![Example of Monmouth University Poll question.](images/monmouth.png){.lightbox width=60%}

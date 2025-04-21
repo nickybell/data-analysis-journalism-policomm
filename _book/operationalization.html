@@ -147,7 +147,13 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>[Mountainous terrain] does not pick up other sorts of rough terrain that can be favorable to guerrillas such as swamps and jungle, and it takes no account of population distributions or food availability in relation to mountains; but it is the best we have been able to do.</p>
 </blockquote>
-<p>We run into this problem all the time. For example, Freedom House.</p>
+<p>We are forced to confront the limitations of our measures all the time. Even how we measure support for Presidential election candidates can be tricky: the Monmouth University Poll, one of the nation’s preeminent national election pollsters, now asks survey respondents about <a href="https://www.monmouth.edu/polling-institute/2022/11/14/2022-monmouth-university-poll-recap/">their probability of support each candidate</a> as separate questions rather than a single head-to-head question for each race.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/monmouth.png" class="lightbox img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Example of Monmouth University Poll question.</figcaption>
+</figure>
+</div>
 
 
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -389,6 +395,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">

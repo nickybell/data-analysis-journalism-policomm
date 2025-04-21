@@ -13,6 +13,7 @@ format:
     theme: yeti
     css: styles.css
     footnotes-hover: true
+    link-external-newwindow: true
 
 
 
