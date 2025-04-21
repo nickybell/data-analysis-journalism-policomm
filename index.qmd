@@ -1,14 +1,3 @@
----
-title: "data-analysis-journalism-policomm"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
----
+# Introduction
 
-
+This book is intended for journalists, political professionals, and students who hope to become journalists or political professionals to learn the principles and practices of data analysis. It is based on course materials developed at George Washington University's [School of Media and Public Affairs](https://smpa.gwu.edu/).
