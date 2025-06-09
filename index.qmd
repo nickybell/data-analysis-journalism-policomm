@@ -1,3 +1,82 @@
 # Introduction
 
 This book is intended for journalists, political professionals, and students who hope to become journalists or political professionals to learn the principles and practices of data analysis. It is based on course materials developed at George Washington University's [School of Media and Public Affairs](https://smpa.gwu.edu/).
+
+Outline:
+
+* Introduction
+    * What is "Vibe Coding"? How can I use AI to do some of this work?
+    * For students
+    * For instructors
+* The data generating process
+    * Introduction: 1970 Vietnam War Draft
+    * Data sources and researcher biases
+    * Optional module: Fraudulent research
+    * Operationalization and measurement bias
+    * Randomization and selection bias
+    * Sample size and uncertainty
+    * Missing data and outliers
+    * Application: Exploratory data analysis using Roper iPoll
+* Correlation vs. causation
+    * Introduction: The Case of Lucy Letby
+    * Positive and negative correlation
+    * Definition of causality/The Fundamental Problem of Causal Inference
+    * John Snow's Cholera Experiment
+    * Experiments, including natural experiments
+    * Observational data challenges:
+        * Confounding
+        * Reverse causation
+    * Optional module: Linear regression
+    * Substantive vs. statistical effects
+    * Application: Analysis of an experiment using descriptive statistics
+* Measuring uncertainty
+    * Introduction: The Good Judgment Project (more uncertain = better guesses)
+    * Why are we uncertain? Example from a real data set
+    * Type 1 vs. Type 2 error
+    * p-values (vid from 538)
+         * The p-value only measures sampling error
+    * Misuses of p-values
+    * The role of sample size in measuring uncertainty
+    * Optional module: Communicating uncertainty in horse race polls
+    * Application: Analysis of an experiment using descriptive statistics
+* Data ethics
+    * Introduction: The Tuskegee Syphilis Study
+    * The Belmont Report and the Common Rule
+        * Respect for Persons/Autonomy
+            * Provides additional protections for persons with diminished autonomy ("children, prisoners, individuals with impaired decision-making capacity, or economically or educationally disadvantaged persons" though only children, prisoners, and pregnant women have specific Subparts).
+        * Beneficence: Maximize potential benefits while minimizing potential harms
+            * Examples of justifiable risk: randomized drug trials
+        * Justice: Ensure that the groups who bear the burdens of research also receive its benefits
+        * Informed Consent
+            * Special considerations for deception and compensation
+        * Optional module: Case studies of unethical research (Stanford Prison Experiment, Milgram experiment)
+        * *NEW** How does this apply to journalism and political communication?
+    * De-identification
+        * Introduction: Buzzfeed tennis match fixing data
+        * Anonymity vs. Confidentiality
+        * Direct vs. indirect identifiers
+        * Techniques for de-identification
+    * Application: **NEW** An exercise in deidentification
+* Data visualization (generated from slides by Gemini)
+    * Introduction: The Challenger Space Shuttle Disaster
+    * The Origins and Evolution of Data Visualization: This section covers the historical development of data visualization, from early examples in the 17th-19th centuries to modern applications
+    * Edward Tufte's Foundational Principles: This segment focuses on the influential work of Edward Tufte, who championed minimalist and data-rich graphical design
+    * The Dueling Philosophies of Engineers and Designers: A comparative look at the functional, data-maximized approach of engineers versus the artistic and narrative-driven style of designers
+    * Optional Module: The Scientific Underpinnings of Data Visualization: This explores the cognitive process, from sight to perception, that underlies how we interpret visual information
+    * Best Practices for Designing Statistical Graphics: This section provides key guidelines for creating clear and honest data visualizations
+    * A Guide to Critically Evaluating Graphs: This offers a framework for analyzing the effectiveness and integrity of a data visualization
+    * Application: Recreating the most famous graphic of all time
+* Political Polling (generated from slides by Gemini)
+    * Historical Context of Polling Misses: The presentation introduces the topic with notable historical polling failures, including the 1936 Literary Digest poll and the inaccurate "Dewey Defeats Truman" headline from 1948, to establish the long-standing challenge of polling accuracy.
+    * The 2016 Election and Non-Response Bias: This section analyzes the 2016 presidential election, arguing that polling errors were primarily due to a "missing at random" (MAR) non-response bias, where pollsters failed to adequately weight responses by voters' education levels.
+    * The 2020 Election and Compounding Biases: The 2020 election presented further challenges, including the COVID-19 pandemic and record turnout. The errors in these polls are attributed to a combination of MAR non-response bias and "missing not at random" (MNAR) bias, which includes the "shy Trump voter" theory.
+    * The 2022 Midterms and Partisan Polling: For the 2022 elections, the focus shifts to the growing influence of partisan-aligned pollsters, whose over-representation in polling averages created a misleading expectation of a "red wave," and the phenomenon of "herding," where pollsters adjust results to match consensus.
+    * The 2024 Election and New Weighting Techniques: Analysis of the 2024 election shows that pollsters attempted to correct for previous errors by introducing new techniques, such as weighting results based on respondents' "recalled vote" from past elections, though challenges with "likely voter" models remained.
+    * Optional module: **NEW** AI and political polling
+    * Understanding Types of Polling Error: The presentation provides a theoretical foundation by defining key types of non-sampling errors, including noncoverage, nonresponse, and measurement error, and explains the statistical concepts of Missing Completely at Random (MCAR), Missing at Random (MAR), and Missing Not at Random (MNAR).
+    * Modern Survey Sampling Methodologies: This section outlines the various methods pollsters use to gather data, such as list-based sampling from voter files, address-based sampling (ABS), random-digit dialing (RDD), and the increasingly common use of non-probability online opt-in panels.
+    * Principles of Effective Survey Design: The final part offers practical guidance on writing good survey questions to avoid "satisficing," where respondents give low-effort answers. Key recommendations include keeping surveys brief, using simple and unambiguous language, and avoiding double-barreled or leading questions.
+    * Application: return to the EDA of a poll conducted earlier and see how proper weighting can change the results
+* **NEW** Machine learning
+* Appendix A: A brief introduction to R
+* other appendicies
