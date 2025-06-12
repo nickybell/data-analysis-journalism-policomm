@@ -4,13 +4,75 @@
     "href": "index.html",
     "title": "Data Analysis for Journalism and Political Communication",
     "section": "",
-    "text": "1 Introduction\nThis book is intended for journalists, political professionals, and students who hope to become journalists or political professionals to learn the principles and practices of data analysis. It is based on course materials developed at George Washington University’s School of Media and Public Affairs.\nOutline:\n\nIntroduction\n\nCase study: soccer red cards (FiveThirtyEight)\nWhy this book?\nOutline\nWhy R? (Anything on vibe coding?)\nFor instructors\n\nThe data generating process\n\nIntroduction: 1970 Vietnam War Draft\nData sources and researcher biases\nOperationalization and measurement bias\nRandomization and selection bias\nSample size and uncertainty\nMissing data and outliers\nOptional module: Fraudulent research\nApplication: Exploratory data analysis (dataset TBD)\n\nCorrelation vs. causation\n\nIntroduction: The Case of Lucy Letby\nPositive and negative correlation\nRubin causal model\nExperiments, including natural experiments\n\nJohn Snow’s Cholera Experiment\n\nCausal inference using observational data\n\nConfounding\nReverse causation\n\nSubstantive vs. statistical effects\nOptional module: Linear regression\nApplication: Analysis of Gerber and Green (2000)\n\nMeasuring uncertainty\n\nIntroduction: The Good Judgment Project (uncertainty is good!)\nThe sampling distribution (example from real data)\nType I vs. Type II error\nP-values (vid from 538)\n\nThe p-value only measures sampling error\nMisuses of p-values\n\nConfidence intervals\nOptional module: Communicating uncertainty in horse race polls\nApplication: The dangers of “crosstab diving” in polls\n\nData ethics\n\nIntroduction: The Tuskegee Syphilis Study\nThe Belmont Report and the Common Rule\nInformed Consent\n\nSpecial considerations for deception and compensation\n\nCase studies of unethical research\n\nStanford prison experiment\nMilgram experiment\n\n*NEW** How does this apply to journalism and political communication?\nDe-identification\n\nIntroduction: Buzzfeed tennis match fixing data\nAnonymity vs. Confidentiality\nDirect vs. indirect identifiers\nTechniques for de-identification\n\nApplication: NEW An exercise in deidentification\n\nData visualization\n\nIntroduction: The Challenger Space Shuttle Disaster\nHistorical development of data visualization\nEdward Tufte’s design principles\nEngineers vs. designers\nAn opinionated guide to data visualization\nOptional module: The science of data visualization\nApplication in R: Re-creating Charles Minard’s famous graph of Napoleon’s invasion of Russia\n\nPolitical Polling\n\nHistorical development of political polling\nTotal survey error framework\nReview of 2016, 2020, 2022, and 2024 election polling\nIgnorable vs. non-ignorable response bias\nSample weighting\nSample construction and survey techniques\nSurvey design best practices\nOptional module: NEW Advances in AI and political polling\nApplication: Weighting polls to correct for ignorable non-response bias\n\nNEW Machine learning\nAppendix A: A brief introduction to R"
+    "text": "Welcome\nOutline:\n\nIntroduction\n\nCase study: soccer red cards (FiveThirtyEight)\nWhy this book?\nOutline\nWhy R? (Anything on vibe coding?)\nFor instructors\n\nThe data generating process\n\nIntroduction: 1970 Vietnam War Draft\nData sources and researcher biases\nOperationalization and measurement bias\nRandomization and selection bias\nSample size and uncertainty\nMissing data and outliers\nOptional module: Fraudulent research\nApplication: Exploratory data analysis (dataset TBD)\n\nCorrelation vs. causation\n\nIntroduction: The Case of Lucy Letby\nPositive and negative correlation\nRubin causal model\nExperiments, including natural experiments\n\nJohn Snow’s Cholera Experiment\n\nCausal inference using observational data\n\nConfounding\nReverse causation\n\nSubstantive vs. statistical effects\nOptional module: Linear regression\nApplication: Analysis of Gerber and Green (2000)\n\nMeasuring uncertainty\n\nIntroduction: The Good Judgment Project (uncertainty is good!)\nThe sampling distribution (example from real data)\nType I vs. Type II error\nP-values (vid from 538)\n\nThe p-value only measures sampling error\nMisuses of p-values\n\nConfidence intervals\nOptional module: Communicating uncertainty in horse race polls\nApplication: The dangers of “crosstab diving” in polls\n\nData ethics\n\nIntroduction: The Tuskegee Syphilis Study\nThe Belmont Report and the Common Rule\nInformed Consent\n\nSpecial considerations for deception and compensation\n\nCase studies of unethical research\n\nStanford prison experiment\nMilgram experiment\n\n*NEW** How does this apply to journalism and political communication?\nDe-identification\n\nIntroduction: Buzzfeed tennis match fixing data\nAnonymity vs. Confidentiality\nDirect vs. indirect identifiers\nTechniques for de-identification\n\nApplication: NEW An exercise in deidentification\n\nData visualization\n\nIntroduction: The Challenger Space Shuttle Disaster\nHistorical development of data visualization\nEdward Tufte’s design principles\nEngineers vs. designers\nAn opinionated guide to data visualization\nOptional module: The science of data visualization\nApplication in R: Re-creating Charles Minard’s famous graph of Napoleon’s invasion of Russia\n\nPolitical Polling\n\nHistorical development of political polling\nTotal survey error framework\nReview of 2016, 2020, 2022, and 2024 election polling\nIgnorable vs. non-ignorable response bias\nSample weighting\nSample construction and survey techniques\nSurvey design best practices\nOptional module: NEW Advances in AI and political polling\nApplication: Weighting polls to correct for ignorable non-response bias\n\nNEW Machine learning\nAppendix A: A brief introduction to R",
+    "crumbs": [
+      "Welcome"
+    ]
   },
   {
-    "objectID": "operationalization.html#footnotes",
-    "href": "operationalization.html#footnotes",
+    "objectID": "data_generating_process/researcher_choices.html",
+    "href": "data_generating_process/researcher_choices.html",
+    "title": "1  Researcher Choices",
+    "section": "",
+    "text": "1.1 Introduction\n- The West Wing, Season 3, Episode 7 (link to video)\nThis part is about something called “researcher degrees of freedom.” It consists of many parts:\nIn this book, we will focus only on the first X of these that have do with what we call the data generating process.\nDEFINE DGP\nWhy? First, this isn’t a book about statistics, and we’re happy to point you in the right direction for that. But more importantly, because no amount of statistical wizardry can make up for bad data (garbage in = garbage out).\nBefore we get in to these researcher choices, we need to emphasize that data is generated by humans. Often, when researchers make mistakes, it’s not intentional - we’re just human (though there is an optional module in this section about famous cases of purposely fraudulent research.) We’ll start our disucssion by covering just some of the most biases that affect researchers when designing data generating processes and analysis plans.",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Researcher Choices</span>"
+    ]
+  },
+  {
+    "objectID": "data_generating_process/researcher_choices.html#introduction",
+    "href": "data_generating_process/researcher_choices.html#introduction",
+    "title": "1  Researcher Choices",
+    "section": "",
+    "text": "SAM: On Monday, the OMB is putting out a new formula for calculating the poverty level.\nTOBY: I saw that. Does it need Presidential approval before it goes to Congress?\nSAM: Yeah.\nTOBY: What’s the problem?\nSAM: It’s a good news, bad news thing. Under the new formula, poverty is up 2 percent…\nTOBY: What does that shake out to?\nSAM: 4 million new poor people.\nTOBY: …4 million people became poor on the President’s watch?\nSAM: They didn’t become poor. They were poor already. And now we’re calling them poor.",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Researcher Choices</span>"
+    ]
+  },
+  {
+    "objectID": "data_generating_process/researcher_choices.html#researcher-biases",
+    "href": "data_generating_process/researcher_choices.html#researcher-biases",
+    "title": "1  Researcher Choices",
+    "section": "1.2 Researcher Biases",
+    "text": "1.2 Researcher Biases\n\n1.2.1 Confirmation Bias\n\n\n\nnecessary text for centering\n\n\n\n\n1.2.2 Desirability Bias\n\n\n1.2.3 Authority Bias\n\n\n\nnecessary text for centering\n\n\n\n\n1.2.4 Availability Bias\n\n\n\nnecessary text for centering\n\n\nAny evidence that fear of plane crashes goes up when it’s in the news?\nWhat about that famous shark attacks article?\n\n\n1.2.5 Certainty Bias",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Researcher Choices</span>"
+    ]
+  },
+  {
+    "objectID": "data_generating_process/operationalization.html",
+    "href": "data_generating_process/operationalization.html",
     "title": "2  Operationalization",
     "section": "",
-    "text": "Defined as “military conflict characterized by small, lightly armed bands practicing guerrilla warfare from rural base areas.”↩︎"
+    "text": "2.1 Introduction\nOne of the most cited articles in political science is by James Fearon and David Laitin and concerns the causes of civil war. The authors argue that a country’s vulnerability to insurgency1 explains the likelihood that a country ends up in civil war.\nLet’s put ourselves in the shoes of the authors. If we want to observe the correlation between civil wars and “vulnerability to insurgency,” we need a quantifiable measure that we can use in our analysis. How do we find such a measure? Fearon and Laitin actually propose XX measures of “vulnerability to insurgency”:\nFor now, let’s focus on just one: rough terrain. Certainly rough terrain is more measurable than vulnerability to insurgency, but the researcher must still make important choices. How “rough” must the ground be to qualify as rough terrain? Will we measure roughness in degrees (e.g., on a scale from 1-100) or as categories (flat, somewhat rough, or very rough)? What is the unit of geography for which we will measure roughness? If a town lies in a flat valley surrounded by rocky, steep hills, is that considered rough terrain?\nFearon and Laitin ultimately chose to measure rough terrain as the proportion of the country that is “mountainous,” as determined by the geographer A.J. Gerard. Still, there are questions about Gerard’s measure. When does a hill become a mountain (the subject of a 1995 film starring Hugh Grant, The Englishman Who Went Up a Hill But Came down a Mountain)? Does it matter if the mountain is accessible, with roads and trails, or covered in rocks and dense forest? Are mountain ranges better or worse for insurgency compared to mountains that stand alone?\nAlthough I am picking on Fearon and Laitin a bit here, in truth, it is very difficult to find good measures for most of the concepts in which we are interested when conducting data analysis. Researchers try their best to come up with measures that are concise and unambiguous, but often we are just doing the best we can with the resources that we have. As long as we are upfront with our readers, we can generally accept the limitations of our measures and move on. For example, Fearon and Laitin write,\nWe are forced to confront the limitations of our measures all the time. Even how we measure support for Presidential election candidates can be tricky: the Monmouth University Poll, one of the nation’s preeminent national election pollsters, now asks survey respondents about their probability of support each candidate as separate questions rather than a single head-to-head question for each race.",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Operationalization</span>"
+    ]
+  },
+  {
+    "objectID": "data_generating_process/operationalization.html#introduction",
+    "href": "data_generating_process/operationalization.html#introduction",
+    "title": "2  Operationalization",
+    "section": "",
+    "text": "[Mountainous terrain] does not pick up other sorts of rough terrain that can be favorable to guerrillas such as swamps and jungle, and it takes no account of population distributions or food availability in relation to mountains; but it is the best we have been able to do.\n\n\n\n\n\nExample of Monmouth University Poll question.",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Operationalization</span>"
+    ]
+  },
+  {
+    "objectID": "data_generating_process/operationalization.html#footnotes",
+    "href": "data_generating_process/operationalization.html#footnotes",
+    "title": "2  Operationalization",
+    "section": "",
+    "text": "Defined as “military conflict characterized by small, lightly armed bands practicing guerrilla warfare from rural base areas.”↩︎",
+    "crumbs": [
+      "Data Generating Process",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Operationalization</span>"
+    ]
   }
 ]

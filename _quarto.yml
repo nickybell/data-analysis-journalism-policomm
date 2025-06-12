@@ -6,7 +6,10 @@ book:
   author: "Nicholas Bell, Ph.D."
   chapters:
     - index.qmd
-    - operationalization.qmd
+    - part: "Data Generating Process"
+      chapters:
+        - data_generating_process/researcher_choices.qmd
+        - data_generating_process/operationalization.qmd
     
 format:
   html:
