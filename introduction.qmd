@@ -1,0 +1,13 @@
+# Introduction
+
+## Example: Are Soccer Referees Racially Biased?
+
+## Why this book?
+
+## Outline
+
+## Using R
+
+### Vibe coding tools
+
+## For instructors

@@ -1,3 +1,76 @@
-# Introduction
+# Welcome {.unnumbered}
 
-This book is intended for journalists, political professionals, and students who hope to become journalists or political professionals to learn the principles and practices of data analysis. It is based on course materials developed at George Washington University's [School of Media and Public Affairs](https://smpa.gwu.edu/).
+Outline:
+
+* Introduction
+    * Case study: soccer red cards (FiveThirtyEight)
+    * Why this book?
+    * Outline
+    * Why R? (Anything on vibe coding?)
+    * For instructors
+* The data generating process
+    * Introduction: 1970 Vietnam War Draft
+    * Data sources and researcher biases
+    * Operationalization and measurement bias
+    * Randomization and selection bias
+    * Sample size and uncertainty
+    * Missing data and outliers
+    * Optional module: Fraudulent research
+    * Application: Exploratory data analysis (dataset TBD)
+* Correlation vs. causation
+    * Introduction: The Case of Lucy Letby
+    * Positive and negative correlation
+    * Rubin causal model
+    * Experiments, including natural experiments
+        * John Snow's Cholera Experiment
+    * Causal inference using observational data
+        * Confounding
+        * Reverse causation
+    * Substantive vs. statistical effects
+    * Optional module: Linear regression
+    * Application: Analysis of Gerber and Green (2000)
+* Measuring uncertainty
+    * Introduction: The Good Judgment Project (uncertainty is good!)
+    * The sampling distribution (example from real data)
+    * Type I vs. Type II error
+    * P-values (vid from 538)
+        * The p-value only measures sampling error
+        * Misuses of p-values
+    * Confidence intervals
+    * Optional module: Communicating uncertainty in horse race polls
+    * Application: The dangers of “crosstab diving” in polls
+* Data ethics
+    * Introduction: The Tuskegee Syphilis Study
+    * The Belmont Report and the Common Rule
+    * Informed Consent
+        * Special considerations for deception and compensation
+    * Case studies of unethical research
+        * Stanford prison experiment
+        * Milgram experiment
+    * *NEW** How does this apply to journalism and political communication?
+    * De-identification
+        * Introduction: Buzzfeed tennis match fixing data
+        * Anonymity vs. Confidentiality
+        * Direct vs. indirect identifiers
+        * Techniques for de-identification
+    * Application: **NEW** An exercise in deidentification
+* Data visualization
+    * Introduction: The Challenger Space Shuttle Disaster
+    * Historical development of data visualization
+    * Edward Tufte’s design principles
+    * Engineers vs. designers
+    * An opinionated guide to data visualization
+    * Optional module: The science of data visualization
+    * Application in R: Re-creating Charles Minard’s famous graph of Napoleon’s invasion of Russia
+* Political Polling
+    * Historical development of political polling
+    * Total survey error framework
+    * Review of 2016, 2020, 2022, and 2024 election polling
+    * Ignorable vs. non-ignorable response bias
+    * Sample weighting
+    * Sample construction and survey techniques
+    * Survey design best practices
+    * Optional module: **NEW** Advances in AI and political polling
+    * Application: Weighting polls to correct for ignorable non-response bias
+* **NEW** Machine learning
+* Appendix A: A brief introduction to R
