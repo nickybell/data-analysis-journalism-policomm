@@ -155,7 +155,9 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#unambiguous" id="toc-unambiguous" class="nav-link" data-scroll-target="#unambiguous"><span class="header-section-number">2.3.1</span> Unambiguous</a></li>
   <li><a href="#parsimonious" id="toc-parsimonious" class="nav-link" data-scroll-target="#parsimonious"><span class="header-section-number">2.3.2</span> Parsimonious</a></li>
-  <li><a href="#available" id="toc-available" class="nav-link" data-scroll-target="#available"><span class="header-section-number">2.3.3</span> Available</a></li>
+  <li><a href="#accurate" id="toc-accurate" class="nav-link" data-scroll-target="#accurate"><span class="header-section-number">2.3.3</span> Accurate</a></li>
+  <li><a href="#reliable" id="toc-reliable" class="nav-link" data-scroll-target="#reliable"><span class="header-section-number">2.3.4</span> Reliable</a></li>
+  <li><a href="#feasible" id="toc-feasible" class="nav-link" data-scroll-target="#feasible"><span class="header-section-number">2.3.5</span> Feasible</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -231,8 +233,59 @@ Parsimony-Specificity Trade-off
 <p>Like Goldilocks, you try one more operationalization: how many miles an individual drives each year. This is a fairly parsimonious measure, but it is also pretty specific. The more someone drives, the more likely they are to be in an accident and make a claim against their insurance. It is generalizable across different geographies, types of vehicles, and driving styles, but also speaks directly to the risk of insurers paying out claims.</p>
 <p>One important point that I would like to make here is that parsimony is a means to an end, not an end in itself; that is, we aim for parsimonious measures because it makes our research easier to conduct, easier to understand, and easier to explain, not because parsimony is necessarily better than complexity. As Andrew Gelman, a highly influential statistical social scientist, <a href="https://statmodeling.stat.columbia.edu/2004/12/10/against_parsimo/">puts it</a>, “In practice, I often use simple models because they are less effort to fit and, especially, to understand. But I don’t kid myself that they’re better than more complicated efforts!”</p>
 </section>
-<section id="available" class="level3" data-number="2.3.3">
-<h3 data-number="2.3.3" class="anchored" data-anchor-id="available"><span class="header-section-number">2.3.3</span> Available</h3>
+<section id="accurate" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="accurate"><span class="header-section-number">2.3.3</span> Accurate</h3>
+<p>Throughout this book, we will talk about many sources of error, and each type of error will be increasingly challenging to address. Fortunately, at the operationalization stage, the researcher still has nearly complete control over the data analysis process, since ideally not a single data point has yet been collected. Therefore, we should almost always strive to eliminate <strong>measurement error</strong> from our data:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Measurement Error
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Measurement error occurs when the processes, procedures, or instruments used to collect data does not accurately generate the desired information.</p>
+</div>
+</div>
+<p>Obtaining accurate information is particularly challenging when working with social science data, because we rarely have an external standard against which to compare our measurements. If we are designing a new thermometer, we can validate that our instrument is accurate by comparing it’s data to the temperature recorded by one or more other thermometers. However, as journalists and political professionals, we are often operationalizing concepts like beliefs, attitudes, and opinions for which the true value is not known.</p>
+<p>We rely on our research subjects to provide us with accurate information about these highly subjective concepts, and most of the time, the data are <em>close enough</em> to the truth accept their validity. We accept that there will be some measurement error, but that the magnitude is sufficiently small as to be ignorable in most analyses. You may recall that in the 2016 presidential election, there was some media discourse about the possibility of “shy Trump voters,” who planned to vote for Donald Trump but would not admit this to a survey interviewer due to social desirability bias.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> However, studies of the “shy Trump voter” theory fail to find any evidence that these respondents are hiding their true attitudes from interviewers. In one straightforward test, the pollster Morning Consult <a href="https://morningconsult.com/2016/11/03/yes-shy-trump-voters-no-wont-swing-election/">compared support</a> for Hillary Clinton and Donald Trump among those who responded to a survey online and those who spoke to a live interviewer on the phone. They find no meaningful difference in support for the candidates between these two survey modes, even though the “shy Trump voter” theory would predict a greater impact from social desirability bias when speaking to a live interviewer.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/operationalization/morning_consult.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Morning Consult study of the “shy Trump voter” theory."><img src="../images/operationalization/morning_consult.png" class="img-fluid figure-img" style="width:60.0%" alt="Morning Consult study of the “shy Trump voter” theory."></a></p>
+<figcaption>Morning Consult study of the “shy Trump voter” theory.</figcaption>
+</figure>
+</div>
+<p>Even though there is no source of truth against which we can evalute our measures of subjective attitudes, we can still use our knowledge about the subject matter to design more accurate instruments. For example, since 1970, the U.S. Census Bureau has asked separate questions about race and Hispanic or Latino ethnicity. However, many people of Hispanic or Latino descent responded to the race question by selecting “Some other race,” leading to debate about whether Hispanic or Latino identity should be treated as a race. Today, U.S. government agencies are <a href="https://www.federalregister.gov/d/2023-01635">instructed</a> to include Hispanic or Latino as a choice for race alongside other longstanding options. Moreover, until the 2000 Census, individuals could only select one race category to describe themselves, which ignored the possibility of multi-racial Americans. Respondents may now select as many race options as apply. As legal scholar Naomi Mezey said in a <a href="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html?unlocked_article_code=1.PE8.m1k8.eo_nm_lPNbWw&amp;smid=url-share"><em>New York Times</em> review of the history of race on the U.S. Census</a>, “It’s like the census is adjusting the dials on your camera and you get different pictures accordingly.” Finding the right settings on our data camera is critically important for generating accurate operationalization.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/operationalization/census_2010.jpg" class="img-fluid figure-img"></p>
+<figcaption>2010 Census</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/operationalization/census_2030.png" class="img-fluid figure-img"></p>
+<figcaption>Proposed 2030 Census</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>I also want to point out that the definition of measurement error is about the <em>information</em> produced using our data generating process, not the outcomes of our analysis. We can have an unambiguous, parsimonious, and accurate operationalization and yet still fail to find the patterns or relationships in the data that we expect. When we follow the scientific method, this will happen sometimes. Maybe our intuitions were wrong, or our data collection mechanism was flawed (the focus of the next chapter), or we just got unlucky. Good operationalization is a necessary, but not sufficient condition for a valid data analysis that allows us to uncover new facts about the world.</p>
+</section>
+<section id="reliable" class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="reliable"><span class="header-section-number">2.3.4</span> Reliable</h3>
+<p>Measure happiness using the SES scale.</p>
+</section>
+<section id="feasible" class="level3" data-number="2.3.5">
+<h3 data-number="2.3.5" class="anchored" data-anchor-id="feasible"><span class="header-section-number">2.3.5</span> Feasible</h3>
 <p>In the next chapter, we will discuss how to best collect data once you’ve identified an appropriate operationalization.</p>
 
 
@@ -242,6 +295,7 @@ Parsimony-Specificity Trade-off
 <hr>
 <ol>
 <li id="fn1"><p>Defined as “military conflict characterized by small, lightly armed bands practicing guerrilla warfare from rural base areas.”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Social desirability bias is the tendency of survey respondents to answer questions in ways that will be viewed favorably by others.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

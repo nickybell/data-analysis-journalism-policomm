@@ -46,6 +46,37 @@ Like Goldilocks, you try one more operationalization: how many miles an individu
 
 One important point that I would like to make here is that parsimony is a means to an end, not an end in itself; that is, we aim for parsimonious measures because it makes our research easier to conduct, easier to understand, and easier to explain, not because parsimony is necessarily better than complexity. As Andrew Gelman, a highly influential statistical social scientist, [puts it](https://statmodeling.stat.columbia.edu/2004/12/10/against_parsimo/), "In practice, I often use simple models because they are less effort to fit and, especially, to understand. But I don't kid myself that they're better than more complicated efforts!"
 
-### Available
+### Accurate
+
+Throughout this book, we will talk about many sources of error, and each type of error will be increasingly challenging to address. Fortunately, at the operationalization stage, the researcher still has nearly complete control over the data analysis process, since ideally not a single data point has yet been collected. Therefore, we should almost always strive to eliminate **measurement error** from our data:
+
+::: {.callout-note}
+## Measurement Error
+
+Measurement error occurs when the processes, procedures, or instruments used to collect data does not accurately generate the desired information.
+:::
+
+Obtaining accurate information is particularly challenging when working with social science data, because we rarely have an external standard against which to compare our measurements. If we are designing a new thermometer, we can validate that our instrument is accurate by comparing it's data to the temperature recorded by one or more other thermometers. However, as journalists and political professionals, we are often operationalizing concepts like beliefs, attitudes, and opinions for which the true value is not known.
+
+We rely on our research subjects to provide us with accurate information about these highly subjective concepts, and most of the time, the data are *close enough* to the truth accept their validity. We accept that there will be some measurement error, but that the magnitude is sufficiently small as to be ignorable in most analyses. You may recall that in the 2016 presidential election, there was some media discourse about the possibility of "shy Trump voters," who planned to vote for Donald Trump but would not admit this to a survey interviewer due to social desirability bias.^[Social desirability bias is the tendency of survey respondents to answer questions in ways that will be viewed favorably by others.] However, studies of the "shy Trump voter" theory fail to find any evidence that these respondents are hiding their true attitudes from interviewers. In one straightforward test, the pollster Morning Consult [compared support](https://morningconsult.com/2016/11/03/yes-shy-trump-voters-no-wont-swing-election/) for Hillary Clinton and Donald Trump among those who responded to a survey online and those who spoke to a live interviewer on the phone. They find no meaningful difference in support for the candidates between these two survey modes, even though the "shy Trump voter" theory would predict a greater impact from social desirability bias when speaking to a live interviewer.
+
+![Morning Consult study of the "shy Trump voter" theory.](../images/operationalization/morning_consult.png){.lightbox width=60%}
+
+Even though there is no source of truth against which we can evalute our measures of subjective attitudes, we can still use our knowledge about the subject matter to design more accurate instruments. For example, since 1970, the U.S. Census Bureau has asked separate questions about race and Hispanic or Latino ethnicity. However, many people of Hispanic or Latino descent responded to the race question by selecting "Some other race," leading to debate about whether Hispanic or Latino identity should be treated as a race. Today, U.S. government agencies are [instructed](https://www.federalregister.gov/d/2023-01635) to include Hispanic or Latino as a choice for race alongside other longstanding options. Moreover, until the 2000 Census, individuals could only select one race category to describe themselves, which ignored the possibility of multi-racial Americans. Respondents may now select as many race options as apply. As legal scholar Naomi Mezey said in a [*New York Times* review of the history of race on the U.S. Census](https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html?unlocked_article_code=1.PE8.m1k8.eo_nm_lPNbWw&smid=url-share), "It's like the census is adjusting the dials on your camera and you get different pictures accordingly." Finding the right settings on our data camera is critically important for generating accurate operationalization.
+
+::: {layout-ncol=2}
+![2010 Census](../images/operationalization/census_2010.jpg)
+
+![Proposed 2030 Census](../images/operationalization/census_2030.png)
+:::
+
+I also want to point out that the definition of measurement error is about the *information* produced using our data generating process, not the outcomes of our analysis. We can have an unambiguous, parsimonious, and accurate operationalization and yet still fail to find the patterns or relationships in the data that we expect. When we follow the scientific method, this will happen sometimes. Maybe our intuitions were wrong, or our data collection mechanism was flawed (the focus of the next chapter), or we just got unlucky. Good operationalization is a necessary, but not sufficient condition for a valid data analysis that allows us to uncover new facts about the world.
+
+### Reliable
+
+Measure happiness using the SES scale.
+
+### Feasible
 
 In the next chapter, we will discuss how to best collect data once you've identified an appropriate operationalization.
+
