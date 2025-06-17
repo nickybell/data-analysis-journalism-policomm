@@ -26,6 +26,24 @@ Identifying the best operationalization for a concept is somewhat subjective. Ev
 
 ### Unambiguous
 
+Our goal in selecting unambiguous operationalizations is to make it easier to collect, interpret, and communicate about our data. Ambiguous measures can cause us to imprecisely collect our data or make it difficult for others to understand the meaning of our data. Especially when we are measuring concepts which can take on different meanings across contexts, ensuring that our operationalization is unambiguous will avoid many of the pitfalls in research and communication that we will discuss later in this book.
+
+Let's take an example from my own work. As a graduate student, I was interested in how Americans respond to cultural images around international trade, such as a weathered steelworker losing his job or a small business owner forced to close her store due to cheaper competition. In one part of my work, I explored whether politicians use these images in their television advertisements to signal to voters about their positions on international trade. I developed a codebook with several themes that I expected to see in the 800 or so Congressional campaign ads that I was examining. One of the themes was "anti-elite/Wall Street/big business," since corporate greed is sometimes blamed for offshoring of jobs to regions with cheaper labor.
+
+Below I've included two of the ads from my study, only one of which was coded as having the the "anti-elite/Wall Street/big business" theme. Can you guess which one it is?
+
+[Monica Vernon - People](https://www.youtube.com/watch?v=CfkOOjolND0)
+
+If you guessed number **1?**, you are correct! But it wouldn't surprise me if you struggled a bit to identify which ad qualified under the "anti-elite/Wall Street/big business" theme, since you did not have much information about the operationalization of this code. TK TK TK
+
+To avoid this type of ambiguity, I used the following operationalization of the "anti-elite/Wall Street/big business" code:
+
+> References to "the belief that [the working class] are on the losing end of an unfair game. Assessments of the rich as having more than they need or deserve, coupled with a concern that many suffer without what they need to survive" ([McDermott, Knowles, and Richeson 2019](https://doi.org/10.1111/asap.12188), 358). **Must be in direct reference to trade/outsourcing (e.g. a separate reference to tax rates for the rich would not count).**
+
+Criticizing corporations or the wealthy is a common tactic by politicians who want to position themselves as populists. This poses a challenge for collecting my data, as well as for analyzing my results. Am I really capturing how politicians communicate about *trade* specifically if it is such a widely used trope in political advertisements? Knowing this, I proactively addressed this ambiguity in my codebook to help focus my data collection on only the most relevant cases: references which are directly related trade or outsourcing. This allowed me to more accurately identify the frequency with which politicians use anti-elite imagery to communicate with voters about international trade.
+
+How specific should we make our operationalizations in order to avoid ambiguity? Like many of the principles we will discuss in this book, the answer is more art than science, and involves tradeoffs with other considerations in designing good operationalizations. Use your knowledge of the subject matter to design the least ambiguous definition that still meets, as much as possible, our other goals for operationalization described below.
+
 ### Parsimonious
 
 Parsimonious is the social scientific term for "simple" (how non-parsimonious of me to use the more complex word!) When deciding between two possible operationalizations, we should select the one that is simpler, all else equal. In practice, our choice between two measures is not entirely equal. Instead, we frequently make a decision based on the **parsimony-specificity trade-off**:
@@ -74,7 +92,11 @@ I also want to point out that the definition of measurement error is about the *
 
 ### Reliable
 
-Measure happiness using the SES scale.
+Psychologists validate all sorts of scales, including the implicit association test (which you can take for yourself!).
+
+How reliable? Depends on the thing we are measuring. For psychological processes, not too much (60%?). For a medical instrument, near perfect.
+
+This is different than accuracy, which is about relationship to truth. A measure can be reliable without being accurate, and vice-versa.
 
 ### Feasible
 
