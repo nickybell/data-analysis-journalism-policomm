@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../references.html" rel="next">
 <link href="../data_generating_process/researcher_choices.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -139,6 +160,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -150,16 +177,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
-  <li><a href="#from-concept-to-measurement" id="toc-from-concept-to-measurement" class="nav-link" data-scroll-target="#from-concept-to-measurement"><span class="header-section-number">2.2</span> From Concept to Measurement</a></li>
-  <li><a href="#defining-good-measures" id="toc-defining-good-measures" class="nav-link" data-scroll-target="#defining-good-measures"><span class="header-section-number">2.3</span> Defining Good Measures</a>
+  <li><a href="#from-concept-to-measurement" id="toc-from-concept-to-measurement" class="nav-link" data-scroll-target="#from-concept-to-measurement"><span class="header-section-number">2.2</span> From Concept to Measurement</a>
   <ul class="collapse">
-  <li><a href="#unambiguous" id="toc-unambiguous" class="nav-link" data-scroll-target="#unambiguous"><span class="header-section-number">2.3.1</span> Unambiguous</a></li>
-  <li><a href="#parsimonious" id="toc-parsimonious" class="nav-link" data-scroll-target="#parsimonious"><span class="header-section-number">2.3.2</span> Parsimonious</a></li>
-  <li><a href="#accurate" id="toc-accurate" class="nav-link" data-scroll-target="#accurate"><span class="header-section-number">2.3.3</span> Accurate</a></li>
-  <li><a href="#reliable" id="toc-reliable" class="nav-link" data-scroll-target="#reliable"><span class="header-section-number">2.3.4</span> Reliable</a></li>
-  <li><a href="#feasible" id="toc-feasible" class="nav-link" data-scroll-target="#feasible"><span class="header-section-number">2.3.5</span> Feasible</a></li>
+  <li><a href="#unambiguous" id="toc-unambiguous" class="nav-link" data-scroll-target="#unambiguous"><span class="header-section-number">2.2.1</span> Unambiguous</a></li>
+  <li><a href="#parsimonious" id="toc-parsimonious" class="nav-link" data-scroll-target="#parsimonious"><span class="header-section-number">2.2.2</span> Parsimonious</a></li>
+  <li><a href="#accurate" id="toc-accurate" class="nav-link" data-scroll-target="#accurate"><span class="header-section-number">2.2.3</span> Accurate</a></li>
+  <li><a href="#reliable" id="toc-reliable" class="nav-link" data-scroll-target="#reliable"><span class="header-section-number">2.2.4</span> Reliable</a></li>
+  <li><a href="#feasible" id="toc-feasible" class="nav-link" data-scroll-target="#feasible"><span class="header-section-number">2.2.5</span> Feasible</a></li>
   </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.4</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.3</span> Summary</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">2.4</span> Exercise</a></li>
   </ul>
 </nav>
     </div>
@@ -187,30 +214,43 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
-<p>One of the most cited articles in political science is by James Fearon and David Laitin and concerns the causes of civil war. The authors argue that a country’s vulnerability to insurgency<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> explains the likelihood that a country ends up in civil war.</p>
-<p>Let’s put ourselves in the shoes of the authors. If we want to observe the correlation between civil wars and “vulnerability to insurgency,” we need a quantifiable measure that we can use in our analysis. How do we find such a measure? Fearon and Laitin actually propose XX measures of “vulnerability to insurgency”:</p>
-<p>For now, let’s focus on just one: rough terrain. Certainly rough terrain is more measurable than vulnerability to insurgency, but the researcher must still make important choices. How “rough” must the ground be to qualify as rough terrain? Will we measure roughness in degrees (e.g., on a scale from 1-100) or as categories (flat, somewhat rough, or very rough)? What is the unit of geography for which we will measure roughness? If a town lies in a flat valley surrounded by rocky, steep hills, is that considered rough terrain?</p>
-<p>Fearon and Laitin ultimately chose to measure rough terrain as the proportion of the country that is “mountainous,” as determined by the geographer A.J. Gerard. Still, there are questions about Gerard’s measure. When does a hill become a mountain (the subject of a 1995 film starring Hugh Grant, <em>The Englishman Who Went Up a Hill But Came down a Mountain</em>)? Does it matter if the mountain is accessible, with roads and trails, or covered in rocks and dense forest? Are mountain ranges better or worse for insurgency compared to mountains that stand alone?</p>
-<p>Although I am picking on Fearon and Laitin a bit here, in truth, it is <em>very</em> difficult to find good measures for most of the concepts in which we are interested when conducting data analysis. Researchers try their best to come up with measures that are concise and unambiguous, but often we are just doing the best we can with the resources that we have. As long as we are upfront with our readers, we can generally accept the limitations of our measures and move on. For example, Fearon and Laitin write,</p>
+<p>One of the most cited articles in political science is by James Fearon and David Laitin <span class="citation" data-cites="fearon2003">(<a href="../references.html#ref-fearon2003" role="doc-biblioref">2003</a>)</span> and concerns the causes of civil war. The authors argue that a country’s vulnerability to insurgency<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> explains the likelihood that a country ends up in civil war.</p>
+<p>Let’s put ourselves in the shoes of the authors. If we want to observe the correlation between civil wars and “vulnerability to insurgency,” we need a quantifiable measure that we can use in our analysis. How do we find such a measure? Fearon and Laitin actually propose more than a dozen measures of “vulnerability to insurgency”! For now, let’s focus on just one: the presence of rough terrain, which is important because rebels must be able to hide in order to avoid being destroyed by government forces.</p>
+<p>Measuring rough terrain is more specific than vulnerability to insurgency, but the researcher must still make important choices. How “rough” must the ground be to qualify as rough terrain? Will we measure roughness in degrees (e.g., on a scale from 1-100) or as categories (flat, somewhat rough, or very rough)? What is the unit of geography for which we will measure roughness? If a town lies in a flat valley surrounded by rocky, steep hills, is that considered rough terrain?</p>
+<p>Fearon and Laitin ultimately choose to measure rough terrain as the proportion of the country that is “mountainous,” as determined by the geographer A.J. Gerard. Still, there are questions about Gerard’s measure. When does a hill become a mountain (the subject of a 1995 film starring Hugh Grant, <em>The Englishman Who Went Up a Hill But Came down a Mountain</em>)? Does it matter if the mountain is accessible, with roads and trails, or covered in rocks and dense forest? Are mountain ranges better or worse for insurgency compared to mountains that stand alone?</p>
+<p>I am picking on Fearon and Laitin a bit here, but in truth, it is often difficult to find good measures for the concepts in which we are interested when conducting data analysis. Researchers try to come up with measures that closely capture an abstract idea like rough terrain, but often we are just doing the best we can with the resources that we have. As long as we are transparent with our readers about our choices, we can generally accept the limitations of our measures and move on. This is exactly what Fearon and Laitin do in their famous article:</p>
 <blockquote class="blockquote">
-<p>[Mountainous terrain] does not pick up other sorts of rough terrain that can be favorable to guerrillas such as swamps and jungle, and it takes no account of population distributions or food availability in relation to mountains; but it is the best we have been able to do.</p>
+<p>“[Mountainous terrain] does not pick up other sorts of rough terrain that can be favorable to guerrillas such as swamps and jungle, and it takes no account of population distributions or food availability in relation to mountains; but it is the best we have been able to do.”</p>
 </blockquote>
-<p>We are forced to confront the limitations of our measures all the time. Even how we measure support for Presidential election candidates can be tricky: the Monmouth University Poll, one of the nation’s preeminent national election pollsters, now asks survey respondents about <a href="https://www.monmouth.edu/polling-institute/2022/11/14/2022-monmouth-university-poll-recap/">their probability of support each candidate</a> as separate questions rather than a single head-to-head question for each race.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../images/operationalization/monmouth.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Example of Monmouth University Poll question."><img src="../images/operationalization/monmouth.png" class="img-fluid figure-img" style="width:60.0%" alt="Example of Monmouth University Poll question."></a></p>
-<figcaption>Example of Monmouth University Poll question.</figcaption>
-</figure>
+<p>This chapter is all about how to identify good measures for the concepts which we want to study given the real-world constraints that we face, a process that we call <strong>operationalization</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+Operationalization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The process of defining a measurable version of a concept.</p>
+</div>
+</div>
+<p>The bulk of this chapter will cover some guidelines that we can use when coming up with measures that can help you avoid common pitfalls in data analysis:</p>
+<ol type="1">
+<li>Measures should be unambiguous.</li>
+<li>Measures should be parsimonious.</li>
+<li>Measures should be accurate.</li>
+<li>Measures should be reliable.</li>
+<li>Measures should be feasible.</li>
+</ol>
+<p>We will explore each of these recommendations in turn. However, our discussion will often revolve around the trade-offs that researchers must weigh when deciding on an operationalization. How can we develop an operationalization that is specific, but also simple? When can we be confident enough in the quality of the data we generate, given the practical challenges that we face in collecting that data? Operationalization is as much art as science, and we often <a href="https://en.wikipedia.org/wiki/I_know_it_when_I_see_it">know a good measure when we see it</a>. The goal of this chapter is to give you some tools to begin developing your own measures and evaluating the choices of others, and the more that you practice, the more confident you will become in creating good operationalizations.</p>
 </section>
 <section id="from-concept-to-measurement" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="from-concept-to-measurement"><span class="header-section-number">2.2</span> From Concept to Measurement</h2>
-</section>
-<section id="defining-good-measures" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="defining-good-measures"><span class="header-section-number">2.3</span> Defining Good Measures</h2>
 <p>Identifying the best operationalization for a concept is somewhat subjective. Every possible operationalization has both pros and cons, and it is important to consider alternative measures before committing to any one approach.</p>
-<section id="unambiguous" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="unambiguous"><span class="header-section-number">2.3.1</span> Unambiguous</h3>
+<section id="unambiguous" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="unambiguous"><span class="header-section-number">2.2.1</span> Unambiguous</h3>
 <p>Our goal in selecting unambiguous operationalizations is to ease the collection, interpretation, and communication about our data. Ambiguous measures can cause us to imprecisely collect our data or make it difficult for others to understand the meaning of our data. Especially when we are measuring concepts which can take on different meanings across contexts, ensuring that our operationalization is unambiguous will avoid many of the pitfalls in research and communication that we will discuss later in this book.</p>
 <p>Let’s take an example from my own work. As a graduate student, I was interested in how Americans respond to cultural images around international trade, such as a weathered steelworker losing his job or a small business owner forced to close her store due to cheaper competition. In one part of my work, I explored whether politicians use these images in their television advertisements to signal to voters about their positions on international trade. I developed a codebook with several themes that I expected to see in the 800 or so Congressional campaign ads that I was examining. One of the themes was “anti-elite/Wall Street/big business,” since corporate greed is sometimes blamed for the offshoring of jobs to regions with cheaper labor.</p>
 <p>Below I’ve included two of the ads from my study, only one of which was coded as having the the “anti-elite/Wall Street/big business” theme. Can you guess which one it is?</p>
@@ -223,8 +263,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Criticizing corporations or the wealthy is a common tactic by politicians who want to position themselves as populists. This poses a challenge for collecting my data, as well as for analyzing my results. Am I really capturing how politicians communicate about <em>trade</em> specifically if it is such a widely used trope in political advertisements? Knowing this, I proactively addressed this ambiguity in my codebook to focus my data collection on only the most relevant cases: references which are directly related trade or outsourcing. This allowed me to more accurately identify the frequency with which politicians use anti-elite imagery to communicate with voters about international trade.</p>
 <p>How specific should we make our operationalizations in order to avoid ambiguity? Like many of the principles we will discuss in this book, the answer is more art than science, and involves tradeoffs with other considerations in designing good operationalizations. Use your knowledge of the subject matter to design the least ambiguous definition that still meets, as much as possible, our other goals for operationalization described below.</p>
 </section>
-<section id="parsimonious" class="level3" data-number="2.3.2">
-<h3 data-number="2.3.2" class="anchored" data-anchor-id="parsimonious"><span class="header-section-number">2.3.2</span> Parsimonious</h3>
+<section id="parsimonious" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="parsimonious"><span class="header-section-number">2.2.2</span> Parsimonious</h3>
 <p>Parsimonious is the social scientific term for “simple” (how non-parsimonious of me to use the more complex word!) When deciding between two possible operationalizations, we should select the one that is simpler, all else equal. In practice, our choice between two measures is not entirely equal. Instead, we frequently make a decision based on the <strong>parsimony-specificity trade-off</strong>:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -245,8 +285,8 @@ Parsimony-Specificity Trade-off
 <p>Like Goldilocks, you try one more operationalization: how many miles an individual drives each year. This is a fairly parsimonious measure, but it is also pretty specific. The more someone drives, the more likely they are to be in an accident and make a claim against their insurance. It is generalizable across different geographies, types of vehicles, and driving styles, but also speaks directly to the risk of insurers paying out claims.</p>
 <p>One important point that I would like to make here is that parsimony is a means to an end, not an end in itself; that is, we aim for parsimonious measures because it makes our research easier to conduct, easier to understand, and easier to explain, not because parsimony is necessarily better than complexity. As Andrew Gelman, a highly influential statistical social scientist, <a href="https://statmodeling.stat.columbia.edu/2004/12/10/against_parsimo/">puts it</a>, “In practice, I often use simple models because they are less effort to fit and, especially, to understand. But I don’t kid myself that they’re better than more complicated efforts!”</p>
 </section>
-<section id="accurate" class="level3" data-number="2.3.3">
-<h3 data-number="2.3.3" class="anchored" data-anchor-id="accurate"><span class="header-section-number">2.3.3</span> Accurate</h3>
+<section id="accurate" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="accurate"><span class="header-section-number">2.2.3</span> Accurate</h3>
 <p>Throughout this book, we will talk about many sources of error, and each type of error will be increasingly challenging to address. Fortunately, at the operationalization stage, the researcher still has nearly complete control, since ideally not a single data point has yet been collected. Therefore, we should almost always strive to eliminate <strong>measurement error</strong> from our data:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -265,7 +305,7 @@ Measurement Error
 <p>We rely on our research subjects to provide us with accurate information about these highly subjective concepts, and most of the time, the data are <em>close enough</em> to the truth accept their validity. We accept that there will be some measurement error, but that the magnitude is sufficiently small as to be ignorable in most analyses. For example, you may recall that in the 2016 presidential election, there was some media discourse about the possibility of “shy Trump voters,” who planned to vote for Donald Trump but would not admit this to a survey interviewer due to social desirability bias.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> However, studies of the “shy Trump voter” theory fail to find any evidence that these respondents are hiding their true attitudes from interviewers. In one straightforward test, the pollster Morning Consult <a href="https://morningconsult.com/2016/11/03/yes-shy-trump-voters-no-wont-swing-election/">compared support</a> for Hillary Clinton and Donald Trump among those who responded to a survey online and those who spoke to a live interviewer on the phone. They find no meaningful difference in support for the candidates between these two survey modes, even though the “shy Trump voter” theory would predict a greater impact from social desirability bias when speaking to a live interviewer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../images/operationalization/morning_consult.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Morning Consult study of the “shy Trump voter” theory."><img src="../images/operationalization/morning_consult.png" class="img-fluid figure-img" style="width:60.0%" alt="Morning Consult study of the “shy Trump voter” theory."></a></p>
+<p><a href="../images/operationalization/morning_consult.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Morning Consult study of the “shy Trump voter” theory."><img src="../images/operationalization/morning_consult.png" class="img-fluid figure-img" style="width:70.0%" alt="Morning Consult study of the “shy Trump voter” theory."></a></p>
 <figcaption>Morning Consult study of the “shy Trump voter” theory.</figcaption>
 </figure>
 </div>
@@ -292,16 +332,16 @@ Measurement Error
 </div>
 <p>I also want to point out that the definition of measurement error is about the <em>information</em> produced using our data generating process, not the outcomes of our analysis. We can have an unambiguous, parsimonious, and accurate operationalization and yet still fail to find the patterns or relationships in the data that we expect. When we follow the scientific method, this will happen sometimes. Maybe our intuitions were wrong, or our data collection mechanism was flawed (the focus of the next chapter), or we just got unlucky. Good operationalization is a necessary, but not sufficient condition for a valid data analysis that allows us to uncover new facts about the world.</p>
 </section>
-<section id="reliable" class="level3" data-number="2.3.4">
-<h3 data-number="2.3.4" class="anchored" data-anchor-id="reliable"><span class="header-section-number">2.3.4</span> Reliable</h3>
+<section id="reliable" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="reliable"><span class="header-section-number">2.2.4</span> Reliable</h3>
 <p>Reliability refers to the likelihood that, given the same conditions, our measure will record the same data in repeated trials. Getting the same result over and over again is distinct from accuracy, which has to do with whether the data we generate is close to the true value. Think about a broken clock stuck at 5:15 – the clock’s measurement of time is extremely reliable (it is always 5:15!) but only accurate twice per day.</p>
 <p>Of course, our goal is to have measures that are both reliable <em>and</em> accurate, and in certain cases, reliability may be an imperative. When designing a diagnostic evaluation for a disease, we want each test to reliably generate a positive value if the disease is present and a negative value if the disease is not present. But as data analysts, we are often willing to sacrifice some reliability if the mean, or average, of our data samples is accurate, because we are not focusing on the results of individual tests. Instead, we are interested in the value across our entire <strong>sample</strong> or <strong>population</strong>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><sup>,</sup> <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> This is especially the case when working with attitudes, beliefs, and opinions where generating exactly the same conditions for data collection are nearly impossible. If I conduct a diagnostic medical test five minutes apart, it is very unlikely that the biology of the disease has changed during that time; on the other hand, if I ask your opinion about a hot-button political issue, even small changes in your thinking or mood could change your response between the two tests.</p>
 <p>As an example, consider the Implicit Association Test (IAT), which measures the strength of subconscious associations between two groups (such as European Americans and African Americans) with subjective evaluations (such as good and bad). Participants are presented with images and words and asked to sort them into groups as quickly as they can. Based on how long it takes the participant to sort images and words representing the groups – such as images of people’s faces – relative to a set of words (e.g., “grief” and “appealing”), we can identify implicit psychological associations between the groups and the evaluations. If you’d like, you can learn more about the IAT and take an IAT yourself at <a href="https://implicit.harvard.edu/implicit/takeatest.html">Project Implicit’s website</a>.</p>
 <p>The IAT has been used to evaluate the effect of implicit bias on voter behavior, candidate choice, race and immigration attitudes, partisan identity, and more. Despite its prominence, <a href="https://doi.org/10.1146/annurev-psych-010419-050837">meta-analyses of research using the IAT</a> find that the test has only a moderate reliability, <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> which cautions us against drawing conclusions about a single individual’s attitudes from just one test result. Implicit attitudes are a complex cognitive process, and the way that individuals respond to IAT tasks from moment to moment can vary dramatically. Yet, this level of reliability is widely considered sufficient for studies correlating IAT with other measures or comparing average results between two different groups.</p>
 <p>The goal of reliability is not to create an operationalization that perfectly generates consistent data, but rather about maximizing our confidence that we are getting signals from our data and not just noise. Statistical estimates like Cronbach’s alpha, Cohen’s kappa, and Intraclass Correlation Coefficient can help us diagnose potentially unreliable measures, but more often we rely on our knowledge of the subject matter and the data generating process to assess the reliability of our operationalizations.</p>
 </section>
-<section id="feasible" class="level3" data-number="2.3.5">
-<h3 data-number="2.3.5" class="anchored" data-anchor-id="feasible"><span class="header-section-number">2.3.5</span> Feasible</h3>
+<section id="feasible" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="feasible"><span class="header-section-number">2.2.5</span> Feasible</h3>
 <p>One of my favorite professors would ask us to design our research projects “as if money, time, and resources were no object.” The idea is that freeing ourselves from logistical concerns allows the most important and critical ideas in our research design to surface, and then we can whittle down our ideal framework into one that is practical and reasonable. I’ve found this framework helpful again and again in my career, and that is why we discuss the feasibility the last quality of a good operationalization. We should focus on finding the best operarationalization that is unambiguous, parsimonious, accurate, and reliable, and only then turn to considerations of feasibility.</p>
 <p>It is strictly necessary for a good operationalization that we can actually generate the data that we would like to collect. For example, I may believe that having my students write essays about the course material is the best way to evaluate their knowledge. However, if I am teaching a class of 350 students, I would not assign my students an essay because I cannot effectively grade that many responses. My operationalization of student knowledge is not a feasible one, and I will need to come up with an alternative measure, such as a multiple choice test or short answer questions. Nevertheless, knowing I would ideally assign my students an essay will help me design more feasible assessments that still measure the concepts in which I am interested, such as students’ ability to find relationships between multiple topics or apply tools to novel cases.</p>
 <p>When our ideal operationalization is not available to us, it may be possible to identify a <em>proxy measure</em>, a similar or related operationalization that captures enough of the same information as our ideal measure we can use our alternative measure as a substitute. We often use proxy measures when collecting data about attitudes or beliefs that individuals are unwilling or unable to reliably report themselves. Two heuristics that can be used to identify a proxy measure are if the operationalization is highly correlated with the ideal measure (such as assessing whether someone enjoys movies by asking if they watch the Oscars), or if the researcher combines a group of measures into a single numeric variable known as an <strong>index (or scale) variable</strong>:</p>
@@ -335,13 +375,32 @@ Index (or Scale) Variable
 <p><em>include example of trust in government index from ANES</em></p>
 </section>
 </section>
-<section id="summary" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.4</span> Summary</h2>
+<section id="summary" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.3</span> Summary</h2>
 <ul>
 <li>bullet points go here</li>
 </ul>
+</section>
+<section id="exercise" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="exercise"><span class="header-section-number">2.4</span> Exercise</h2>
+<p>The Monmouth University Poll, one of the nation’s preeminent national election pollsters, now asks survey respondents about <a href="https://www.monmouth.edu/polling-institute/2022/11/14/2022-monmouth-university-poll-recap/">their probability of supporting each candidate</a> as separate questions rather than a single head-to-head question for each race. Patrick Murray, the Director of the Monmouth University Polling Institute, wrote that,</p>
+<blockquote class="blockquote">
+<p>“Horse race polls are not judged on the range of support shown for a candidate – i.e., each candidate’s vote share plus or minus a margin of error – but on assessing the size of the gap between the two candidates’ shares. This obsession with ”the gap” is fraught with potential error… This [change] gives a proxy for the horse race question while also providing another layer of understanding the campaign’s dynamics – specifically, how high or low is each candidate’s potential ceiling of support.”</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/operationalization/monmouth.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Example of Monmouth University Poll question."><img src="../images/operationalization/monmouth.png" class="img-fluid figure-img" style="width:70.0%" alt="Example of Monmouth University Poll question."></a></p>
+<figcaption>Example of Monmouth University Poll question.</figcaption>
+</figure>
+</div>
+<p><em>Q goes here</em></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-fearon2003" class="csl-entry" role="listitem">
+Fearon, James D., and David D. Laitin. 2003. <span>“Ethnicity, Insurgency, and Civil War.”</span> <em>American Political Science Review</em> 97 (1): 75–90. <a href="https://doi.org/10.1017/S0003055403000534">https://doi.org/10.1017/S0003055403000534</a>.
+</div>
+</div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
@@ -767,6 +826,9 @@ Index (or Scale) Variable
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

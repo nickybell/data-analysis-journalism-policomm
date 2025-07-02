@@ -10,6 +10,9 @@ book:
       chapters:
         - data_generating_process/researcher_choices.qmd
         - data_generating_process/operationalization.qmd
+    - references.qmd
+
+bibliography: references.bibtex
     
 format:
   html:
@@ -17,6 +20,7 @@ format:
     css: styles.css
     footnotes-hover: true
     link-external-newwindow: true
+    citations-hover: true
 
 
 
